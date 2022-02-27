@@ -19,8 +19,8 @@ struct ArmButtonView: View {
                     .frame(maxWidth: .infinity)
                     .padding()
             }).buttonStyle(ConnectButton())
-        }.opacity(1)
-//        .opacity(viewModel.connected ? 1.0 : 0.0)
+        }
+        .opacity(viewModel.connected ? 1.0 : 0.0)
         .frame(width: 220)
         .padding(.top)
     }
