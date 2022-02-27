@@ -25,6 +25,7 @@ class ELockViewModel : NSObject, ObservableObject, Identifiable {
     func armingFunc(_ digit: Int) {
         stateCmd[0] = 0x00
         stateCmd[1] = UInt8(digit)
+        send()
     }
     
     // 4
